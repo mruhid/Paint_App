@@ -12,15 +12,15 @@
             <div class="row">
                 <label for="" class="title">Shapes</label>
                 <ul class="optionss">
-                    <li class="options">
+                    <li class="options tool" id="rectangle">
                         <img src="./icons/rectangle.svg" alt="">
                         <span>Restangle</span>
                     </li>
-                    <li class="options">
+                    <li class="options tool" id="circle">
                         <img src="./icons/circle.svg" alt="">
                         <span>Circle</span>
                     </li>
-                    <li class="options">
+                    <li class="options tool" id="triangle">
                         <img src="./icons/triangle.svg" alt="">
                         <span>Triangle</span>
                     </li>
@@ -35,11 +35,11 @@
             <div class="row">
                 <label for="" class="title">Options</label>
                 <ul class="optionss">
-                    <li class="options">
+                    <li class="options tool" id="brush">
                         <img src="./icons/brush.svg" alt="">
                         <span>Brush</span>
                     </li>
-                    <li class="options">
+                    <li class="options tool" id="eraser">
                         <img src="./icons/eraser.svg" alt="">
                         <span>Erases</span>
                     </li>
@@ -54,10 +54,13 @@
                 <label for="" class="title">Colors</label>
                 <ul class="optionss">
                    <li class="options"></li>
+                   <li class="options selected"></li>
                    <li class="options"></li>
                    <li class="options"></li>
-                   <li class="options"></li>
-                   <li class="options"></li>
+                   <li class="options">
+                    <input type="color" value="red"  id="color-picker">
+
+                   </li>
 
                 </ul>
             </div>
@@ -69,9 +72,13 @@
 
         </section>
 
-            <section class="drawing-board"></section>
+            <section class="drawing-board">
+                <canvas></canvas>
+            </section>
 
        
     </div>
+
+    <script src="./app.js"></script>
 </body>
 </html>
